@@ -1,0 +1,310 @@
+@import "vars"
+@import "fonts"
+
+h1, h2, h3, h4, h5, h6, p
+    margin: 0
+    padding: 0
+
+body
+    font-family: $bg_med
+    font-size: 16px
+    font-weight: normal
+    color: $color_text
+    background-color: #f8f8f8
+    ul
+        list-style: none
+        margin: 0
+        padding: 0
+    a
+        color: inherit
+        &:hover, &:focus, &:active, &:visited
+            text-decoration: none
+            color: inherit
+        
+header
+    background-image: url(../img/header_bg.png)
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: top center
+    min-height: 550px
+    position: relative
+    #btn_bottom
+        position: absolute
+        bottom: 50px
+        right: 37px
+        z-index: 25
+        a
+            &::before
+                content: "\f063"
+                font-family: $icon
+                font-size: 20px
+                color: #fff
+    .logo
+        float: left
+        padding-top: 40px
+    .menu
+        color: #fff
+        font-size: 13px
+        ul
+            padding-top: 70px
+            padding-left: 160px
+            li
+                display: inline-block
+            li+li
+                padding-left: 30px
+    .btn_menu
+            display: none
+            border: none
+            background-color: transparent
+            color: #fff
+            outline: none
+            font-size: 25px
+            padding-top: 65px
+            z-index: 20
+    h1
+        font-family: $bg_black
+        font-weight: normal
+        font-size: 40px
+        line-height: 48px
+        color: #fff
+        max-width: 635px
+        padding-top: 190px
+        margin-left: 45px
+        position: relative
+        &::before
+            content: ""
+            background-color: #fff
+            width: 156px
+            height: 6px
+            position: absolute
+            top: 160px
+            left: -45px
+        &::after
+            content: ""
+            background-color: #fff
+            width: 6px
+            height: 106px
+            position: absolute
+            top: 160px
+            left: -45px
+        
+.first_section
+    .intro
+        margin-top: -50px
+        padding-top: 80px
+        padding-bottom: 57px
+        background-color: #fff
+        .text_info
+            margin: 0 auto
+            max-width: 389px
+            line-height: 45px
+            //padding-bottom: 35px
+            padding: 0 10px 35px
+            span
+                color: $color_title
+                display: block
+                padding-bottom: 40px
+        .button
+            a
+                width: 282px
+                border: 3px solid #e7e7e7
+                position: relative
+                @extend %btn_default
+                &::after
+                    content: "\f061"
+                    font-family: $icon
+                    position: absolute
+                    left: 240px
+    .short_lines
+        margin-top: 140px
+        margin-left: -20px
+        background-color: #f9f5d5
+        padding-top: 106px
+        padding-bottom: 127px
+        margin-bottom: 24px
+        h3
+            @extend %h3_default
+        p
+            position: relative
+            @extend %p_default
+            &::after
+                content: ""
+                background-color: #e1ddc0
+                width: 260px
+                height: 1px
+                position: absolute
+                bottom: -28px
+                left: 0
+        h3, p
+            margin: 0 auto
+            
+.second_section
+    .quality
+        background-color: #e9f6fd
+        width: 400px
+        padding-top: 106px
+        padding-bottom: 127px
+        h3
+            @extend %h3_default
+        p
+            position: relative
+            @extend %p_default
+            &::after
+                content: ""
+                background-color: #dae6ed
+                width: 260px
+                height: 1px
+                position: absolute
+                bottom: -28px
+                left: 0
+        h3, p
+            margin: 0 auto
+    .img
+        padding-top: 53px
+            
+.last_section
+    .team
+        margin-top: -183px
+        margin-left: -20px
+        margin-bottom: 163px
+        background-color: #f8e4e3
+        padding-top: 106px
+        padding-bottom: 89px
+        h3
+            @extend %h3_default
+        p
+            @extend %p_default
+        .button
+            margin-top: 30px
+            a
+                width: 250px
+                border: 3px solid #e1cfce
+                position: relative
+                @extend %btn_default
+                &::after
+                    content: "\f061"
+                    font-family: $icon
+                    position: absolute
+                    left: 214px
+        h3, p
+            margin: 0 auto
+                
+.footer
+    background-color: #fff
+    .logo_mini
+        padding-top: 60px
+    h4
+        font-family: $bg_black
+        color: $color_title
+        font-weight: normal
+        padding-top: 70px
+        float: left
+    ul
+        padding-top: 127px
+        li
+            line-height: 35px
+            &:first-child,
+            &:last-child
+                color: $color_title
+                font-family: $bg_black
+                font-weight: normal
+    .social
+        ul
+            li
+                display: inline-block
+                a
+                    &::before
+                        content: "\f099"
+                        font-family: $icon
+                        font-size: 26px
+                        color: $color_title
+                &:last-child
+                    a
+                        &::before
+                            content: "\f0e1"
+                            font-family: $icon
+            li+li
+                padding-left: 53px
+    .after_footer
+        border-top: 1px solid #e5e5e5
+        margin-top: 80px
+        p
+            color: $color_title
+            float: right
+            font-size: 12px
+            line-height: 80px
+            
+.mfp-wrap .mfp-content
+    max-width: 540px
+    background-color: #fff
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    text-align: center
+    h4
+        font-family: $bg_bold
+        font-weight: normal
+        color: $color_title
+        font-size: 16px
+        padding-top: 60px
+        padding-bottom: 25px
+    input
+        width: 465px
+        height: 64px
+        color: #b6b6b6
+        outline: none
+        margin-bottom: 15px
+        padding-left: 20px
+        border: 3px solid #e7e7e7
+    textarea
+        width: 465px
+        height: 226px
+        outline: none
+        padding-left: 20px
+        border: 3px solid #e7e7e7
+        resize: none
+        margin-bottom: 12px
+    input[type="submit"]
+        font-family: $bg_bold
+        color: $color_title
+        font-weight: normal
+        width: 286px
+        height: 64px
+        border: 3px solid #e7e7e7
+        position: relative
+        background-color: #fff
+        margin-bottom: 55px
+        &::after
+            content: "\f061"
+            font-family: $icon
+            position: absolute
+            top: 0
+            left: 0
+        &:active
+            background-color: $color_title
+            color: #fff
+            border: 3px solid $color_title
+    input:focus:required:valid
+        border-color: #c1c1c1
+    input:focus:required:invalid
+        border-color: #ce5656
+
+#btn_top
+    position: fixed
+    bottom: 40px
+    right: 40px
+    z-index: 25
+    a
+        opacity: .7
+        &::before
+            content: "\f062"
+            font-family: $icon
+            font-size: 20px
+            color: #8a8a8a
+        &:hover
+            opacity: 1
+            transition: all .3s
+    
+        
+@import "media"

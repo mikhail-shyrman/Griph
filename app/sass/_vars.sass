@@ -1,0 +1,42 @@
+$icon: 'icomoon'
+$bg_med: 'BasisGrotesquePro-Medium'
+$bg_black: 'BasisGrotesquePro-Black'
+$bg_bold: 'BasisGrotesquePro-Bold'
+$color_title: #0a0a0b
+$color_text: #818181
+
+%btn_default
+    color: $color_title
+    padding: 17px 20px
+    font-family: $bg_black
+    font-weight: normal
+    display: block
+    outline: none
+    margin: 0 auto
+    &:active
+        background-color: $color_title
+        border: 3px solid $color_title
+        color: #fff
+    
+%h3_default
+    text-align: center
+    font-family: $bg_black
+    font-size: 20px
+    padding-bottom: 22px
+    font-weight: normal
+    color: $color_title
+    position: relative
+    &::before
+        content: ""
+        background-color: $color_title
+        width: 260px
+        height: 5px
+        position: absolute
+        top: -30px
+        left: 50%
+        margin-left: -130px
+    
+%p_default
+    max-width: 260px
+    font-size: 14px
+    line-height: 34px
